@@ -27,6 +27,8 @@ $routes = glob('*', GLOB_ONLYDIR);
 			</div>
 			<?php 
 			foreach ($routes as $route) {
+				if (strpos($route, '.'))
+					continue;
 				echo("<div class='container $route'>
                 <p class='image-caption'><a href='$route/'>$route</a></p>
 			</div>
