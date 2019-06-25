@@ -14,7 +14,7 @@ $routes = glob('*', GLOB_ONLYDIR);
 		<title></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="root.css">
+		<link rel="stylesheet" href="../root.css">
 	</head>
 	<body>
 		<!--[if lt IE 7]>
