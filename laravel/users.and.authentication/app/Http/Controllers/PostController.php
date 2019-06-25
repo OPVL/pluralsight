@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
-use Illuminate\Session\Store;
 use App\Like;
 use App\Tag;
 
