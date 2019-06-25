@@ -1,13 +1,17 @@
 'use strict';
 
-let cat = {
+let catES = {
     name: 'Fluffy',
-    color: 'White'
+    color: 'White',
+    speak: function(){
+        display("Where's my lasagna John?");
+    },
+    age: 4
 }
-cat.age = 4;
-cat.speak = function () {
-    display("Where's my lasagna John?");
-}
-
-display(cat.name);
-display(cat.age);
+/**
+ * Modifying after creation
+ */
+// cat.age = 4;
+// cat.speak = function () {
+//     display("Where's my lasagna John?");
+// }
