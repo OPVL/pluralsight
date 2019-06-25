@@ -1,31 +1,13 @@
 'use strict';
 
-let cat = {
-    name: {first: 'Graham', last: 'Field'},
-    colour: 'Blue'
-}
+let arr = ['red', 'green', 'blue'];
+Object.defineProperty(Array.prototype, 'last', {get: function(){
+    return this[this.length - 1];
+}});
 
-Object.defineProperty(cat, 'fullName', {
-    get: function(){
-        return `${this.name.first} ${this.name.last}`;
-    },
-    set: function(value){
-        let nameParts = value.split(' ');
-        this.name.first = nameParts[0];
-        this.name.last = nameParts[1];
-    }
-});
+let last = arr[arr.length - 1]; // crappy way
 
-display(cat.fullName);
-cat.fullName = 'Garmanar Felds';
-display(cat.fullName);
-{
-// cat['Leg Length'] = 4;
+display(arr.last);
 
-// // Object.defineProperty(cat, 'name', {configurable: false});
-// Object.defineProperty(cat, 'name', {writable: false}); // can change writable
-// Object.defineProperty(cat, 'name', {enumerable: false}); // cannot redefine property & prevents deletion
-// delete cat.name;
-
-// display(cat);
-}
+let arr2 = ['red', 'green', 'blue','red', 'green', 'blue','gorilla'];
+display(arr2.last);
