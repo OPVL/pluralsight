@@ -1,11 +1,11 @@
 'use strict';
 
 //new
-function Cat(){
-    this.name = 'Fluffy'
-    this.color = 'White'
+function Cat(name, colour){
+    this.name = name
+    this.colour = colour
 }
 
-let cat = new Cat();
+let cat = new Cat('Kevin', 'Disgruntled Muffin');
 
 display(cat);
