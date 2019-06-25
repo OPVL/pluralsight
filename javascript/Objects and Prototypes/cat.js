@@ -1,26 +1,23 @@
 'use strict';
 
-//new
-// function Cat(name, colour){
-//     this.name = name
-//     this.colour = colour
-// }
-
-// let cat = new Cat('Kevin', 'Disgruntled Muffin');
-
-let cat = Object.create(Object.prototype,{
-    name: {
-        value: 'Fluffy',
-        enumerable: true,
-        writable: true,
-        configurable: true
-    },
-    color: {
-        value: 'White',
-        enumerable: true,
-        writable: true,
-        configurable: true
+class Cat {
+    /**
+     * Initialises the 'Cat' class
+     * @param {string} name give the kitty a name
+     * @param {string} colour and dip in some paint
+     */
+    constructor(name, colour){
+        this.name = name
+        this.colour = colour
     }
-});
+
+    speak(){
+        display(`Where the fuck's my lasagna John? I'm ${this.name} fuckin' field.`)
+    }
+}
+
+let cat = new Cat('Graham', 'Blue');
 
 display(cat);
+
+cat.speak();
