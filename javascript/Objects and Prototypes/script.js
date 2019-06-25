@@ -8,5 +8,6 @@ let cat = {
 cat['Leg Length'] = 4;
 
 Object.defineProperty(cat, 'name', {configurable: false});
+Object.defineProperty(cat, 'name', {writable: false}); // can change writable
 Object.defineProperty(cat, 'name', {enumerable: false}); // cannot redefine property & prevents deletion
 delete cat.name;
