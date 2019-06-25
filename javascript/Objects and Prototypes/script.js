@@ -1,13 +1,21 @@
 'use strict';
 
-let arr = ['red', 'green', 'blue'];
-Object.defineProperty(Array.prototype, 'last', {get: function(){
-    return this[this.length - 1];
-}});
+let myFunc = function(){
 
-let last = arr[arr.length - 1]; // crappy way
+}
 
-display(arr.last);
+display(myFunc.prototype);
 
-let arr2 = ['red', 'green', 'blue','red', 'green', 'blue','gorilla'];
-display(arr2.last);
+function Cat(name, colour) {
+    this.name = name
+    this.colour = colour
+}
+
+let greg = new Cat('Greg', 'Yellow');
+
+Cat.prototype.age = 3;
+
+display(Cat.prototype);
+display(greg.__proto__);
+
+display(Cat.prototype === greg.__proto__);
