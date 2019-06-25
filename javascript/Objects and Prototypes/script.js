@@ -1,17 +1,10 @@
 'use strict';
 
-let catES = {
-    name: 'Fluffy',
-    color: 'White',
-    speak: function(){
-        display("Where's my lasagna John?");
-    },
-    age: 4
+let cat = {
+    name: 'Graham',
+    colour: 'Blue'
 }
-/**
- * Modifying after creation
- */
-// cat.age = 4;
-// cat.speak = function () {
-//     display("Where's my lasagna John?");
-// }
+
+cat['Leg Length'] = 4;
+
+display(Object.getOwnPropertyDescriptor(cat, 'name'));
