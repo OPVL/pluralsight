@@ -1,13 +1,21 @@
 'use strict';
 
-let cat = {
-    name: 'Fluffy',
-    color: 'White'
-}
-cat.age = 4;
-cat.speak = function () {
-    display("Where's my lasagna John?");
+let myFunc = function(){
+
 }
 
-display(cat.name);
-display(cat.age);
+display(myFunc.prototype);
+
+function Cat(name, colour) {
+    this.name = name
+    this.colour = colour
+}
+
+let greg = new Cat('Greg', 'Yellow');
+
+Cat.prototype.age = 3;
+
+display(Cat.prototype);
+display(greg.__proto__);
+
+display(Cat.prototype === greg.__proto__);
