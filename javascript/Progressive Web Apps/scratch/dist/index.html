@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Air Antarctica</title>
-    <style>
-      /* app shell CSS */
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Air Antarctica</title><style>/* app shell CSS */
       :root {
         --gray: #ececec;
         --whitesmoke: #f5f5f5;
@@ -106,59 +98,7 @@
           stroke-dashoffset: 187;
           transform: rotate(450deg);
         }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- app shell HTML -->
-    <nav id="navbar">Flights</nav>
-
-    <main id="screens">
-      <div id="screen-flights" class="screen">
-        <div class="spinner-container">
-          <svg
-            class="spinner"
-            width="40px"
-            height="40px"
-            viewBox="0 0 66 66"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              class="path"
-              fill="none"
-              stroke-width="6"
-              stroke-linecap="round"
-              cx="33"
-              cy="33"
-              r="30"
-            ></circle>
-          </svg>
-        </div>
-      </div>
-      <div id="screen-rewards" class="screen">
-        <div class="spinner-container">
-          <svg
-            class="spinner"
-            width="40px"
-            height="40px"
-            viewBox="0 0 66 66"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              class="path"
-              fill="none"
-              stroke-width="6"
-              stroke-linecap="round"
-              cx="33"
-              cy="33"
-              r="30"
-            ></circle>
-          </svg>
-        </div>
-      </div>
-    </main>
-    <script>
-      const debounce = (func, wait, immediate) => {
+      }</style></head><body><nav id="navbar">Flights</nav><main id="screens"><div id="screen-flights" class="screen"><div class="spinner-container"><svg class="spinner" width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div id="screen-rewards" class="screen"><div class="spinner-container"><svg class="spinner" width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></main><script>const debounce = (func, wait, immediate) => {
         var timeout;
         return (...args) => {
           const later = () => {
@@ -181,7 +121,4 @@
         navbar.textContent = pageNames[index];
       }, 60);
 
-      screens.addEventListener("scroll", pageTransition);
-    </script>
-  </body>
-</html>
+      screens.addEventListener("scroll", pageTransition);</script><script type="text/javascript" src="main.3a80b66c44e760edb8d2.js"></script></body></html>
