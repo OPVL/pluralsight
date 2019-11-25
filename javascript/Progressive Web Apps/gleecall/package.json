@@ -1,5 +1,5 @@
 {
-  "name": "air-antarctica",
+  "name": "gleecall",
   "scripts": {
     "dev": "webpack-dev-server --env.mode development --colors",
     "build": "webpack --env.mode production",

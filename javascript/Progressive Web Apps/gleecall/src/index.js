@@ -12,7 +12,7 @@ fetch("https://pluralsight-pwa-scratch.firebaseio.com/flights.json")
   .then(data => {
     let html = "";
     data.forEach(flight => {
-      html += `<div class="card">${flight.city}</div>`;
+      html+=`<div class="card">${flight.city}</div>`;
     });
     document.querySelector("#screen-flights").innerHTML = html;
   });
